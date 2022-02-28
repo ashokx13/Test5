@@ -23,3 +23,10 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           FROM_BRANCH: "master"
           TO_BRANCH: "develop"
+      - name: Merge pull request
+        id: merge
+        uses: ./
+        with: 
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          FROM_BRANCH: "master"
+          TO_BRANCH: "develop"
